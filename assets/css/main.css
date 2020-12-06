@@ -1,0 +1,125 @@
+/*Fonts */
+@font-face {
+	font-family: Sailec;
+	src: url(../fonts/Sailec.otf);
+}
+a:hover{ text-decoration: none;}
+button:focus,.slick-slide:focus{outline: none;}
+body {
+	font-family: Sailec;
+/* background-color: #e5e5e5;*/}
+p{font-size: 14px;}
+/*Navbar CSS*/
+.navbar-nav .nav-item {
+    margin-left: 15px;
+}
+.navbar-nav .nav-link:hover {
+    color: #151442;
+}
+/* Product Slider Item*/
+.use-case-item img {
+    width: 100%;
+    margin: auto;
+}
+ul.slick-dots {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 10px 0;
+}
+ul.slick-dots > li {
+    display: inline-block;
+    margin: 0 3px;
+}
+ul.slick-dots > li button {
+    background: transparent;
+    color: #007ac9;
+    height: 1px;
+    width: 100px;
+    border: 1px solid #fff;
+    text-indent: -9999px
+}
+ul.slick-dots > li button:focus {
+    outline: none;
+}
+ul.slick-dots > li.slick-active button {
+    background: #007ac9;
+}
+/*banner*/
+.banner_contents{background-color: #0F2421; color:#fff;}
+.banner_image .kalise_banner_img{ max-width: 100%;}
+.btn-Video_btn:hover{border: 1px solid #fff;}
+.btn-Video_btn{background: #C7E1BF;border-radius: 50px;}
+.mini_cart {
+    position: absolute;
+    width: 24px;
+    top: -6px;
+    background: #151442;
+    border-radius: 50px;
+    color: #fff;
+    text-align: center;
+    left: -8px;
+}
+.user-section .cart{position: relative;}
+/*products*/
+.product_img{max-width: 100%;}
+.products-box h4{color:#151442;}
+.products-box span{color: #8F9095;}
+.products-box p{color:#8F9095;}
+.shop-now{float: right;margin-top: -100px; }
+.btn-shopnow:hover{border: 2px solid #151442;}
+.btn-shopnow{border-radius: 50px;}
+/*headings*/
+.main_titles_1{font-weight: 700;font-size:88px;line-height:96.4px;color:  #fff;}
+.main_titles_2{font-weight: 500;font-size:80px;line-height:96.4px;color:  #151442;}
+.main_titles_3{font-weight: 500;font-size:80px;line-height:96.4px;color:  #fff;}
+.benefits p{font-size: 18px;line-height:26.91px; padding: 15px 5px;}
+/*testimonials*/
+.testimonials{background-image: url(../images/clients.png); background-size: 100% 100%;}
+.testimonials span{font-size:22px}
+.client_saystext{background-color: #FFF3F3;}
+.client_saystext .client_saystext_para {color: #342B42;font-size: 40px;font-weight: 500;letter-spacing: 0em;text-align: left;}
+.client_name{font-size: 18px;}
+.client_designation{font-size: 14px; }
+.client_saystext .client_saystext_para::before{content: ""; position: absolute; background: url(../images/clientsays1.png) no-repeat; width: 60px;
+height: 60px; left: 45px; top:20px;}
+.client_saystext .client_saystext_para::after{content : ""; position: absolute;  background : url(../images/clientsays2.png) no-repeat;width: 60px;
+height: 60px; right: 45px}
+/*footer*/
+#main_footer{background-color: #0F2421; color:#fff;}
+#main_footer h3{font-size:88px}
+.footer_quicklinks{margin: 0; padding: 0; list-style: none; line-height: 39.55px;}
+.footer_quicklinks a{color:#fff;}
+.footer_quicklinks a:hover{color: #C7E1BF;}
+.footer_address p {line-height:28.77px; }
+
+/*Media Queries*/
+@media (min-width:1024px){
+    .banner_image .kalise_banner_img{margin-left:-90px; margin-top: 1.5rem;}
+   .kalose-menu{position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99999;
+    background: transparent;
+} 
+.navbar.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+
+.navbar .navbar-brand{color: #fff;}
+.navbar.scrolled .navbar-brand{color: #000;}
+}
+    
+
+
+@media (max-width:767px){
+.main_titles_1 {font-size: 2rem;line-height: 2.5rem;}
+.main_titles_2 {font-size: 1.5rem; line-height: 2rem;}
+.main_titles_3 {font-size: 1.8rem;line-height: 2rem;}
+.client_saystext .client_saystext_para { font-size: 1.2rem; }
+.client_saystext .client_saystext_para::before { top: 10px;}
+.client_saystext .client_saystext_para::after {right: 1rem;    bottom: 5rem;}
+#main_footer h3 {  font-size: 3rem;}
+}
